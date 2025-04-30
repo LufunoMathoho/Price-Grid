@@ -1,0 +1,119 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Segoe UI', sans-serif;
+    background-color: hsl(204, 43%, 93%);
+    color: hsl(218, 22%, 67%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    min-height: 100vh;
+  }
+  
+  .card {
+    max-width: 800px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto 1fr;
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.1);
+  }
+
+  .card-header {
+    grid-column: span 2;
+    background-color: white;
+    padding: 2rem;
+  }
+  
+  .card-header h1 {
+    color: hsl(179, 62%, 43%);
+    margin-bottom: 1rem;
+    font-size: 1.8rem;
+  }
+  
+  .card-header h2 {
+    color: hsl(71, 73%, 54%);
+    font-size: 1.1rem;
+    margin-bottom: 1rem;
+  }
+  
+  .card-header p {
+    line-height: 1.5;
+    font-size: 0.95rem;
+  }
+  
+  .card-pricing {
+    background-color: hsl(179, 62%, 43%);
+    color: white;
+    padding: 2rem;
+  }
+  
+  .card-pricing h3 {
+    font-size: 1.25rem;
+    margin-bottom: 1rem;
+  }
+  
+  .card-pricing .price {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .card-pricing .amount {
+    font-weight: bold;
+    font-size: 2.5rem;
+  }
+  
+  .card-pricing p {
+    margin-bottom: 1.5rem;
+  }
+  
+  .card-pricing button {
+    background-color: hsl(71, 73%, 54%);
+    border: none;
+    padding: 1rem;
+    width: 100%;
+    border-radius: 5px;
+    font-size: 1rem;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .card-pricing button:hover {
+    background-color: hsl(71, 73%, 60%);
+  }
+  
+  .card-why {
+    background-color: hsl(179, 47%, 52%);
+    color: white;
+    padding: 2rem;
+  }
+  
+  .card-why h3 {
+    font-size: 1.25rem;
+    margin-bottom: 1rem;
+  }
+  
+  .card-why ul {
+    list-style: none;
+    font-size: 0.95rem;
+    line-height: 1.6;
+  }
+  
+  @media (max-width: 768px) {
+    .card {
+      grid-template-columns: 1fr;
+    }
+    .card-header {
+      grid-column: 1;
+    }
+  }
+  
